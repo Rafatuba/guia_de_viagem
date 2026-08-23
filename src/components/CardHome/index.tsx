@@ -13,6 +13,7 @@ export default function CardHome() {
         height: 300,
         borderRadius: 5,
         position: "relative",
+        backgroundColor: "black",
       }}
     >
       <CardMedia
