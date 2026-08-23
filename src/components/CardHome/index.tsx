@@ -2,7 +2,6 @@ import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import CarImage from "../../assets/t-cross.png";
 
 export default function CardHome() {
@@ -13,21 +12,13 @@ export default function CardHome() {
         height: 300,
         borderRadius: 5,
         position: "relative",
-        backgroundColor: "black",
+        backgroundImage: `  linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55)),
+        url(${CarImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
-      <CardMedia
-        image={CarImage}
-        sx={{
-          position: "absolute",
-          width: "100%",
-          height: "100%",
-          top: 0,
-          left: 0,
-          zIndex: 0,
-          filter: "brightness(60%)",
-        }}
-      />
       <CardActionArea>
         <CardContent sx={{ p: 3 }}>
           <Box
