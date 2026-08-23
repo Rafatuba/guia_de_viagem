@@ -35,7 +35,7 @@ export default function CardHome() {
                 color: "#fff",
                 fontSize: "1.8rem",
                 fontWeight: 700,
-                lineHeight: 1,
+                lineHeight: 1.3,
 
                 mb: "1rem",
               },
@@ -43,10 +43,7 @@ export default function CardHome() {
           >
             <h2>
               Campo Grande
-              <br />
-              →
-              <br />
-              Goiânia
+              <br />→ Goiânia
             </h2>
             <p>Uma viagem tranquila e segura</p>
           </Box>
