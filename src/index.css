@@ -3,4 +3,5 @@
 body {
   color: var(--color-slate-900);
   background-color: var(--color-slate-100);
+  font-family: "Roboto", sans-serif;
 }
