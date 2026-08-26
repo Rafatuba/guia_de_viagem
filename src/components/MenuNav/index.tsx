@@ -38,9 +38,24 @@ export default function MenuNav() {
           component={NavLink}
           to="/mapa"
         />
-        <BottomNavigationAction label="Rota" icon={<Route />} />
-        <BottomNavigationAction label="Custos" icon={<Paid />} />
-        <BottomNavigationAction label="Checklist" icon={<CheckBox />} />
+        <BottomNavigationAction
+          label="Rota"
+          icon={<Route />}
+          component={NavLink}
+          to="/rota"
+        />
+        <BottomNavigationAction
+          label="Custos"
+          icon={<Paid />}
+          component={NavLink}
+          to="/custos"
+        />
+        <BottomNavigationAction
+          label="Checklist"
+          icon={<CheckBox />}
+          component={NavLink}
+          to="/checklist"
+        />
       </BottomNavigation>
     </Box>
   );
