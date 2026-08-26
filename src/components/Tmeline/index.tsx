@@ -7,13 +7,14 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import { Button, Card, CardContent, Typography } from "@mui/material";
 import { LocationOn } from "@mui/icons-material";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import { NavLink } from "react-router-dom";
 
 export default function TimelineHome() {
   return (
     <div className="flex flex-col items-center justify-around gap-2 w-full m-auto">
       <div className="flex items-center justify-between w-full px-1">
         <h2 className="text-2xl font-bold">Próximas paradas</h2>
-        <Button variant="text">
+        <Button variant="text" component={NavLink} to={"/rota"}>
           Ver Rota <KeyboardArrowRightIcon />
         </Button>
       </div>
