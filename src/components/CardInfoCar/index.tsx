@@ -15,6 +15,7 @@ export default function CardInfoCar() {
           justifyContent: "flex-start",
           paddingLeft: "30px",
           borderRadius: 3,
+          backgroundColor: "#f8fafc",
         }}
       >
         <CardContent>

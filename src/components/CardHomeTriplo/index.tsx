@@ -14,6 +14,7 @@ export default function CardHomeTriplo() {
           alignItems: "center",
           justifyContent: "center",
           borderRadius: 3,
+          backgroundColor: "#f8fafc",
         }}
       >
         <CardContent
@@ -42,6 +43,7 @@ export default function CardHomeTriplo() {
           alignItems: "center",
           justifyContent: "center",
           borderRadius: 3,
+          backgroundColor: "#f8fafc",
         }}
       >
         <CardContent
@@ -70,6 +72,7 @@ export default function CardHomeTriplo() {
           alignItems: "center",
           justifyContent: "center",
           borderRadius: 3,
+          backgroundColor: "#f8fafc",
         }}
       >
         <CardContent
