@@ -1,13 +1,34 @@
-import * as React from "react";
 import Box from "@mui/material/Box";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 
 import { CheckBox, Home, Map, Paid, Route } from "@mui/icons-material";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 export default function MenuNav() {
-  const [value, setValue] = React.useState(0);
+  const location = useLocation();
+
+  const getValue = () => {
+    switch (location.pathname) {
+      case "/":
+        return 0;
+
+      case "/mapa":
+        return 1;
+
+      case "/rota":
+        return 2;
+
+      case "/custos":
+        return 3;
+
+      case "/checklist":
+        return 4;
+
+      default:
+        return 0;
+    }
+  };
 
   return (
     <Box
@@ -19,13 +40,7 @@ export default function MenuNav() {
         right: 0,
       }}
     >
-      <BottomNavigation
-        showLabels
-        value={value}
-        onChange={(_, newValue) => {
-          setValue(newValue);
-        }}
-      >
+      <BottomNavigation showLabels value={getValue()}>
         <BottomNavigationAction
           label="Início"
           icon={<Home />}
